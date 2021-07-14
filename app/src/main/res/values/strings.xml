@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyDomily</string>
+    <string name="username_input_label">Email Address</string>
+    <string name="password_input_label">Password</string>
+    <string name="log_in_button_label">Log In</string>
+
+</resources>
