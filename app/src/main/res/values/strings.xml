@@ -3,5 +3,6 @@
     <string name="username_input_label">Email Address</string>
     <string name="password_input_label">Password</string>
     <string name="log_in_button_label">Log In</string>
+    <string name="add_profile_button_label">Add Profile</string>
 
 </resources>
