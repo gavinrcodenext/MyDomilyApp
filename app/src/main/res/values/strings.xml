@@ -5,5 +5,13 @@
     <string name="log_in_button_label">Log In</string>
     <string name="add_profile_button_label">Add Profile</string>
     <string name="parent_profile_label">Parent\'s Profile</string>
+    <string name="chore_assignment_user_input">User</string>
+    <string name="chore_selection_label">Chore</string>
+    <string name="custom_chore_input_label">Custom Chore</string>
+    <string name="time_input_label">Time</string>
+    <string name="picture_toggle_label">Require Photo as Proof?</string>
+    <string name="assign_chore_button">Assign Chore</string>
+    <string name="message_input_label">Message</string>
+
 
 </resources>
