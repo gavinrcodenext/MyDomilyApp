@@ -49,6 +49,7 @@ public class ProfilePageActivity extends AppCompatActivity {
                     String profile_name = profile_first_name + profile_last_name;
                     Button button = findViewById(R.id.kid_profile_one);
                     button.setText(profile_name);
+                    dialog.dismiss();
                 }
                 else if (profilesVisible == 1) {
                     View b = findViewById(R.id.kid_profile_two);
@@ -61,6 +62,7 @@ public class ProfilePageActivity extends AppCompatActivity {
                     String profile_name = profile_first_name + profile_last_name;
                     Button button = findViewById(R.id.kid_profile_two);
                     button.setText(profile_name);
+                    dialog.dismiss();
                 }
                 else if (profilesVisible == 2) {
                     View b = findViewById(R.id.kid_profile_three);
@@ -73,6 +75,7 @@ public class ProfilePageActivity extends AppCompatActivity {
                     String profile_name = profile_first_name + profile_last_name;
                     Button button = findViewById(R.id.kid_profile_three);
                     button.setText(profile_name);
+                    dialog.dismiss();
                 }
                 if (profilesVisible == 3) {
                     View b = findViewById(R.id.kid_profile_four);
@@ -85,6 +88,7 @@ public class ProfilePageActivity extends AppCompatActivity {
                     String profile_name = profile_first_name + profile_last_name;
                     Button button = findViewById(R.id.kid_profile_four);
                     button.setText(profile_name);
+                    dialog.dismiss();
                 }
                 else if (profilesVisible == 4) {
                     View b = findViewById(R.id.kid_profile_five);
@@ -109,6 +113,7 @@ public class ProfilePageActivity extends AppCompatActivity {
                     String profile_name = profile_first_name + profile_last_name;
                     Button button = findViewById(R.id.kid_profile_six);
                     button.setText(profile_name);
+                    dialog.dismiss();
                 }
                 else if (profilesVisible == 6) {
                     View b = findViewById(R.id.kid_profile_seven);
@@ -121,6 +126,7 @@ public class ProfilePageActivity extends AppCompatActivity {
                     String profile_name = profile_first_name + profile_last_name;
                     Button button = findViewById(R.id.kid_profile_seven);
                     button.setText(profile_name);
+                    dialog.dismiss();
                 }
                 else if (profilesVisible == 7) {
                     View b = findViewById(R.id.kid_profile_eight);
@@ -133,6 +139,7 @@ public class ProfilePageActivity extends AppCompatActivity {
                     String profile_name = profile_first_name + profile_last_name;
                     Button button = findViewById(R.id.kid_profile_eight);
                     button.setText(profile_name);
+                    dialog.dismiss();
                 }
                 else if (profilesVisible >= 8) {
                     dialog.dismiss();
