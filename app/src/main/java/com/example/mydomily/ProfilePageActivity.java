@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class ProfilePageActivity extends AppCompatActivity {
-
+    private int kidProfilesVisible = 0;
     private AlertDialog.Builder dialogBuilder;
     private AlertDialog dialog;
     private EditText newprofilepopup_firstname, newprofilepopup_lastname;
@@ -35,7 +35,6 @@ public class ProfilePageActivity extends AppCompatActivity {
         dialog.show();
 
         newprofilepopup_save.setOnClickListener(new View.OnClickListener() {
-            int kidProfilesVisible = 0;
             public void onClick(View v) {
                 if (kidProfilesVisible == 0) {
                     View b = findViewById(R.id.kid_profile_one);
@@ -140,7 +139,7 @@ public class ProfilePageActivity extends AppCompatActivity {
                     button.setText(profile_name);
                     dialog.dismiss();
                 }
-                else if (kidProfilesVisible >= 8) {
+                else {
                     dialog.dismiss();
                 }
             }
