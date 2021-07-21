@@ -12,6 +12,8 @@
     <string name="picture_toggle_label">Require Photo as Proof?</string>
     <string name="assign_chore_button">Assign Chore</string>
     <string name="message_input_label">Message</string>
+    <string name="confirm_assign_chore_button_label">Assign Chore</string>
+
 
 
     <string name="activity1">Travis</string>

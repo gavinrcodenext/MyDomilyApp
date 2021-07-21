@@ -15,20 +15,8 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
     }
 
-    Button ButtonBTN = findViewById(R.id.button);
-
-        ButtonBTN.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Button();
-        }
-    });
-}
-
-    private void Button() {
-
-        Intent intent = new Intent(this, Button.class);
-
+    public void goToChoreList(View view) {
+        Intent intent = new Intent(this, MainActivity3.class);
         startActivity(intent);
     }
 }

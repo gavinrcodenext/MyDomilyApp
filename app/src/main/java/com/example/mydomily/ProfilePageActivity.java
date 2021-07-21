@@ -5,17 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
-public class ProfilePageActivity<ParentProfileBTN> extends AppCompatActivity {
+import java.util.ArrayList;
+
+public class ProfilePageActivity extends AppCompatActivity {
     private int kidProfilesVisible = -1;
     private AlertDialog.Builder dialogBuilder;
     private AlertDialog dialog;
     private EditText newprofilepopup_firstname, newprofilepopup_lastname;
     private Button newprofilepopup_cancel, newprofilepopup_save;
+    private ArrayList<String> profiles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,22 +42,14 @@ public class ProfilePageActivity<ParentProfileBTN> extends AppCompatActivity {
 
         newprofilepopup_save.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (kidProfilesVisible == -1) {
-                    View b = findViewById(R.id.parent_profile_button);
-                    b.setVisibility(View.VISIBLE);
-                    kidProfilesVisible += 1;
-                    String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
-                    Button button = findViewById(R.id.parent_profile_button);
-                    button.setText(profile_name);
-                    dialog.dismiss();
-                }
-                else if (kidProfilesVisible == 0) {
+                if (kidProfilesVisible == 0) {
                     View b = findViewById(R.id.kid_profile_one);
                     b.setVisibility(View.VISIBLE);
                     kidProfilesVisible += 1;
                     String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.kid_profile_one);
                     button.setText(profile_name);
+                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else if (kidProfilesVisible == 1) {
@@ -63,6 +59,7 @@ public class ProfilePageActivity<ParentProfileBTN> extends AppCompatActivity {
                     String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.kid_profile_two);
                     button.setText(profile_name);
+                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else if (kidProfilesVisible == 2) {
@@ -72,6 +69,7 @@ public class ProfilePageActivity<ParentProfileBTN> extends AppCompatActivity {
                     String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.kid_profile_three);
                     button.setText(profile_name);
+                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else if (kidProfilesVisible == 3) {
@@ -81,6 +79,7 @@ public class ProfilePageActivity<ParentProfileBTN> extends AppCompatActivity {
                     String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.kid_profile_four);
                     button.setText(profile_name);
+                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else if (kidProfilesVisible == 4) {
@@ -90,6 +89,7 @@ public class ProfilePageActivity<ParentProfileBTN> extends AppCompatActivity {
                     String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.kid_profile_five);
                     button.setText(profile_name);
+                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else if (kidProfilesVisible == 5) {
@@ -99,6 +99,7 @@ public class ProfilePageActivity<ParentProfileBTN> extends AppCompatActivity {
                     String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.kid_profile_six);
                     button.setText(profile_name);
+                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else if (kidProfilesVisible == 6) {
@@ -108,6 +109,7 @@ public class ProfilePageActivity<ParentProfileBTN> extends AppCompatActivity {
                     String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.kid_profile_seven);
                     button.setText(profile_name);
+                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else if (kidProfilesVisible == 7) {
@@ -117,11 +119,13 @@ public class ProfilePageActivity<ParentProfileBTN> extends AppCompatActivity {
                     String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.kid_profile_eight);
                     button.setText(profile_name);
+                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else {
                     dialog.dismiss();
                 }
+
             }
         });
 
@@ -134,8 +138,8 @@ public class ProfilePageActivity<ParentProfileBTN> extends AppCompatActivity {
     }
 
         public void gotoMainActivity2(View view) {
-
-            Intent intent = new Intent(createPackageContext(this,MainActivity2.class));
+            Intent intent = new Intent(this, MainActivity2.class);
+            intent.putStringArrayListExtra("profiles",profiles);
             startActivity(intent);
         }
 }

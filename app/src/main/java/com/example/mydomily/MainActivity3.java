@@ -2,7 +2,9 @@ package com.example.mydomily;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity3 extends AppCompatActivity {
 
@@ -12,5 +14,9 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
     }
 
+    public void gotoChoreAssignmentActivity(View view) {
+        Intent intent = new Intent(this, ChoreAssignmentActivity.class);
+        startActivity(intent);
+    }
 
 }
