@@ -14,4 +14,16 @@
     <string name="message_input_label">Message</string>
 
 
+    <string name="activity1">Travis</string>
+    <string name="activity2">To-do List</string>
+    <string name="activity3">Choose a Member</string>
+    <string name="activity7">Button</string>
+    <string name="activity8">Button</string>
+    <string name="Button">Button</string>
+    <string name="Checkbox">Dishes- 1:30pm</string>
+    <string name="Checkbox3">Mop- 8:00pm</string>
+    <string name="checkBox2">Laundry- 5:00pm</string>
+    <string name="Button4">Take a Picture</string>
+
+
 </resources>

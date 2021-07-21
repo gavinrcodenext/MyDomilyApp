@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyDomily">
-        <activity android:name=".ChoreAssignmentActivity"></activity>
+        <activity android:name=".MainActivity3"></activity>
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".p2pageactivity" />
+        <activity android:name=".Parentpageactivity" />
+        <activity android:name=".Parenthomepageactivity" />
         <activity android:name=".ProfilePageActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
