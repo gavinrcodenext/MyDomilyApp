@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import java.util.ArrayList;
+
 public class MainActivity3 extends AppCompatActivity {
 
     @Override
@@ -16,7 +18,8 @@ public class MainActivity3 extends AppCompatActivity {
 
     public void gotoChoreAssignmentActivity(View view) {
         Intent intent = new Intent(this, ChoreAssignmentActivity.class);
+        ArrayList<String> profiles = getIntent().getStringArrayListExtra("profiles");
+        intent.putStringArrayListExtra("profiles",profiles);
         startActivity(intent);
     }
-
 }

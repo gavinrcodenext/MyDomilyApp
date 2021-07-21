@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -14,12 +15,12 @@ import android.widget.Spinner;
 import java.util.ArrayList;
 
 public class ProfilePageActivity extends AppCompatActivity {
-    private int kidProfilesVisible = -1;
+    private int kidProfilesVisible = 0;
     private AlertDialog.Builder dialogBuilder;
     private AlertDialog dialog;
     private EditText newprofilepopup_firstname, newprofilepopup_lastname;
     private Button newprofilepopup_cancel, newprofilepopup_save;
-    private ArrayList<String> profiles;
+    private ArrayList<String> profiles = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,6 +139,7 @@ public class ProfilePageActivity extends AppCompatActivity {
     }
 
         public void gotoMainActivity2(View view) {
+            Log.e("# of profiles", String.valueOf(profiles.size()));
             Intent intent = new Intent(this, MainActivity2.class);
             intent.putStringArrayListExtra("profiles",profiles);
             startActivity(intent);
