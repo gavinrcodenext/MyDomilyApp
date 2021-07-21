@@ -3,13 +3,14 @@ package com.example.mydomily;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class ProfilePageActivity extends AppCompatActivity {
+public class ProfilePageActivity<ParentProfileBTN> extends AppCompatActivity {
     private int kidProfilesVisible = -1;
     private AlertDialog.Builder dialogBuilder;
     private AlertDialog dialog;
@@ -131,4 +132,10 @@ public class ProfilePageActivity extends AppCompatActivity {
             }
         });
     }
+
+        public void gotoMainActivity2(View view) {
+
+            Intent intent = new Intent(createPackageContext(this,MainActivity2.class));
+            startActivity(intent);
+        }
 }
