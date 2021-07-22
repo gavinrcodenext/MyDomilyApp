@@ -139,7 +139,6 @@ public class ProfilePageActivity extends AppCompatActivity {
     }
 
         public void gotoMainActivity2(View view) {
-            Log.e("# of profiles", String.valueOf(profiles.size()));
             Intent intent = new Intent(this, MainActivity2.class);
             intent.putStringArrayListExtra("profiles",profiles);
             startActivity(intent);

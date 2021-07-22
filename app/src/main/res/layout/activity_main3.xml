@@ -8,8 +8,8 @@
 
     <CheckBox
         android:id="@+id/checkBox_meat2"
-        android:layout_width="135dp"
-        android:layout_height="47dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="116dp"
         android:text="Dishes- 1:30pm"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,31 +31,31 @@
         app:layout_constraintVertical_bias="0.048" />
 
     <CheckBox
-        android:id="@+id/checkBox_meat"
-        android:layout_width="135dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="116dp"
-        android:onClick="@string/Checkbox"
-        android:text="@string/Checkbox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
         android:id="@+id/checkBox2"
-        android:layout_width="140dp"
-        android:layout_height="51dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="@string/checkBox2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox_meat" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_meat2" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="136dp"
-        android:layout_height="45dp"
+        android:id="@+id/chore_assigned_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="@string/Checkbox3"
         app:layout_constraintEnd_toEndOf="parent"
