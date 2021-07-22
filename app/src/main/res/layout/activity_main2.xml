@@ -8,19 +8,105 @@
 
 
     <TextView
-        android:id="@+id/user_label_textview"
+        android:id="@+id/profile_one_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/activity1"
+        android:text="blank"
         android:textColor="#13100F"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/profile_six_label"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="#13100F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <TextView
+        android:id="@+id/profile_five_label"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="#13100F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332" />
+
+    <TextView
+        android:id="@+id/profile_three_label"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="#13100F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.116" />
+
+    <TextView
+        android:id="@+id/profile_four_label"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="#13100F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332" />
+
+    <TextView
+        android:id="@+id/profile_two_label"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="#13100F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
 
     <TextView
         android:id="@+id/textView3"
@@ -37,27 +123,27 @@
         app:layout_constraintVertical_bias="0.047" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/profile_button_one"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="516dp"
         android:onClick="goToChoreList"
         android:text="@string/Button"
+        android:visibility="visible"
         app:backgroundTint="#020101"
         app:icon="@android:drawable/btn_star_big_on"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_label_textview"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204" />
 
     <Button
-        android:id="@+id/kid_profile_one"
+        android:id="@+id/profile_button_two"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="64dp"
+        android:text=" "
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -65,10 +151,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/kid_profile_two"
+        android:id="@+id/profile_button_three"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:visibility="invisible"
@@ -76,7 +162,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/kid_profile_three"
+        android:id="@+id/profile_button_four"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
@@ -84,10 +170,10 @@
         android:layout_marginTop="48dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_button_one" />
 
     <Button
-        android:id="@+id/kid_profile_four"
+        android:id="@+id/profile_button_five"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="52dp"
@@ -95,10 +181,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kid_profile_one" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_button_two" />
 
     <Button
-        android:id="@+id/kid_profile_five"
+        android:id="@+id/profile_button_six"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="48dp"
@@ -106,6 +192,6 @@
         android:layout_marginRight="16dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kid_profile_two" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_button_three" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

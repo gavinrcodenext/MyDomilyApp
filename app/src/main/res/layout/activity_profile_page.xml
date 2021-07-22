@@ -21,7 +21,7 @@
         app:layout_constraintTop_toBottomOf="@+id/add_profile_button" />
 
     <Button
-        android:id="@+id/kid_profile_four"
+        android:id="@+id/profile_button_five"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="48dp"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kid_profile_one" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_button_two" />
 
     <Button
         android:id="@+id/kid_profile_seven"
@@ -40,7 +40,7 @@
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kid_profile_four" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_button_five" />
 
     <Button
         android:id="@+id/kid_profile_eight"
@@ -51,10 +51,10 @@
         android:layout_marginRight="10dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kid_profile_five" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_button_six" />
 
     <Button
-        android:id="@+id/kid_profile_five"
+        android:id="@+id/profile_button_six"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="48dp"
@@ -63,7 +63,7 @@
         android:visibility="invisible"
         app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kid_profile_two" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_button_three" />
 
     <Button
         android:id="@+id/kid_profile_six"
@@ -74,7 +74,7 @@
         android:layout_marginTop="48dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kid_profile_three" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_button_four" />
 
     <Button
         android:id="@+id/add_profile_button"
@@ -89,7 +89,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/kid_profile_one"
+        android:id="@+id/profile_button_two"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="48dp"
@@ -100,7 +100,7 @@
         app:layout_constraintTop_toBottomOf="@+id/add_profile_button" />
 
     <Button
-        android:id="@+id/kid_profile_three"
+        android:id="@+id/profile_button_four"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginStart="10dp"
@@ -112,7 +112,7 @@
         app:layout_constraintTop_toBottomOf="@+id/parent_profile_button" />
 
     <Button
-        android:id="@+id/kid_profile_two"
+        android:id="@+id/profile_button_three"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="48dp"
