@@ -26,6 +26,7 @@
         android:layout_height="120dp"
         android:layout_marginTop="48dp"
         android:visibility="invisible"
+        app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,6 +61,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:visibility="invisible"
+        app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kid_profile_two" />
 
@@ -92,6 +94,7 @@
         android:layout_height="120dp"
         android:layout_marginTop="48dp"
         android:visibility="invisible"
+        app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_profile_button" />
@@ -104,6 +107,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="48dp"
         android:visibility="invisible"
+        app:backgroundTint="#74BA77"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/parent_profile_button" />
 
@@ -115,6 +119,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:visibility="invisible"
+        app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_profile_button" />
 
