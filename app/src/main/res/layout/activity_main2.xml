@@ -17,11 +17,11 @@
         android:textStyle="bold"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.122" />
 
     <TextView
         android:id="@+id/profile_six_label"
@@ -126,11 +126,11 @@
         android:id="@+id/profile_button_one"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:foreground="@drawable/ic_personthing"
         android:onClick="goToChoreList"
-        android:text="@string/Button"
         android:visibility="visible"
-        app:backgroundTint="#020101"
-        app:icon="@android:drawable/btn_star_big_on"
+        app:backgroundTint="#74BA77"
+        app:iconPadding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
