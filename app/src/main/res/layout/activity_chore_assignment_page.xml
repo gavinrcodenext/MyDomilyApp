@@ -57,6 +57,7 @@
         android:layout_marginTop="32dp"
         android:clickable="true"
         android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#74BA77"
         app:fabCustomSize="20dp"
         app:fabSize="auto"
         app:layout_constraintStart_toEndOf="@+id/spinner"
@@ -69,6 +70,7 @@
         android:layout_marginTop="24dp"
         android:clickable="true"
         android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#74BA77"
         app:fabCustomSize="20dp"
         app:fabSize="auto"
         app:layout_constraintStart_toEndOf="@+id/chore_textedit"
@@ -134,6 +136,7 @@
         android:layout_marginBottom="100dp"
         android:onClick="confirmAssignChore"
         android:text="@string/confirm_assign_chore_button_label"
+        app:backgroundTint="#74BA77"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

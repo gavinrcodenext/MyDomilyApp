@@ -22,4 +22,9 @@ public class MainActivity3 extends AppCompatActivity {
         intent.putStringArrayListExtra("profiles",profiles);
         startActivity(intent);
     }
+
+    public void gotoMainActivity4(View view) {
+        Intent intent = new Intent(this, MainActivity4.class);
+        startActivity(intent);
+    }
 }

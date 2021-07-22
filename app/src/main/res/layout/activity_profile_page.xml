@@ -16,6 +16,7 @@
         android:onClick="gotoMainActivity2"
         android:text="@string/parent_profile_label"
         android:visibility="visible"
+        app:backgroundTint="#74BA77"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_profile_button" />
 
@@ -80,6 +81,7 @@
         android:layout_marginTop="16dp"
         android:onClick="createNewProfileDialog"
         android:text="@string/add_profile_button_label"
+        app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
