@@ -41,6 +41,10 @@ public class ChoreAssignmentActivity extends AppCompatActivity {
         intent.putExtra("chore", choreAssigned);
         intent.putExtra("time", timeAssigned);
         intent.putExtra("message", messageAssigned);
+        Integer kidProfilesVisible = getIntent().getIntExtra("kid profiles visible", 0);
+        intent.putExtra("kid profiles visible", kidProfilesVisible);
+        ArrayList<String> profiles = getIntent().getStringArrayListExtra("profiles");
+        intent.putStringArrayListExtra("profiles",profiles);
         startActivity(intent);
     }
 }

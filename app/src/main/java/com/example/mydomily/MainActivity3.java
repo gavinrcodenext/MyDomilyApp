@@ -7,10 +7,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import static android.view.View.INVISIBLE;
+import static android.view.View.VISIBLE;
 
 public class MainActivity3 extends AppCompatActivity {
 
@@ -21,19 +22,46 @@ public class MainActivity3 extends AppCompatActivity {
         String choreAssigned = getIntent().getStringExtra("chore");
         String timeAssigned = getIntent().getStringExtra("time");
         String messageAssigned = getIntent().getStringExtra("message");
-        View b = findViewById(R.id.chore_assigned_checkbox);
         /*ArrayList<String> profiles = getIntent().getStringArrayListExtra("profiles");
         TextView a = findViewById(R.id.todo_list_title_textview);
         a.setText(profiles.get(0) + "'s To-do List");*/
-        if (choreAssigned != null) {
-            b.setVisibility(View.VISIBLE);
+        View a = findViewById(R.id.chore_assigned_checkbox_one);
+        View b = findViewById(R.id.chore_assigned_checkbox_two);
+        View c = findViewById(R.id.chore_assigned_checkbox_three);
+        if (!a.isShown()) {
+            if (choreAssigned != null) {
+            a.setVisibility(VISIBLE);
+            }
+        CheckBox d = findViewById(R.id.chore_assigned_checkbox_one);
+            if (messageAssigned != null) {
+            d.setText(choreAssigned + "- " + timeAssigned + "\n" + messageAssigned);
+            }
+            else {
+            d.setText(choreAssigned + "- " + timeAssigned);
+            }
         }
-        CheckBox c = findViewById(R.id.chore_assigned_checkbox);
-        if (messageAssigned != null) {
-            c.setText(choreAssigned + "- " + timeAssigned + "\n" + messageAssigned);
+        else if (a.isShown() & !b.isShown()) {
+            if (choreAssigned != null) {
+                b.setVisibility(VISIBLE);
+            }
+            CheckBox d = findViewById(R.id.chore_assigned_checkbox_two);
+            if (messageAssigned != null) {
+                d.setText(choreAssigned + "- " + timeAssigned + "\n" + messageAssigned);
+            }
+            else {
+                d.setText(choreAssigned + "- " + timeAssigned);
+            }
         }
-        else {
-            c.setText(choreAssigned + "- " + timeAssigned);
+        else if (a.isShown() & b.isShown()) {
+            if (choreAssigned != null) {
+                c.setVisibility(VISIBLE);
+            }
+            CheckBox d = findViewById(R.id.chore_assigned_checkbox_three);
+            if (messageAssigned != null) {
+                d.setText(choreAssigned + "- " + timeAssigned + "\n" + messageAssigned);
+            } else {
+                d.setText(choreAssigned + "- " + timeAssigned);
+            }
         }
     }
 
@@ -41,11 +69,17 @@ public class MainActivity3 extends AppCompatActivity {
         Intent intent = new Intent(this, ChoreAssignmentActivity.class);
         ArrayList<String> profiles = getIntent().getStringArrayListExtra("profiles");
         intent.putStringArrayListExtra("profiles",profiles);
+        Integer kidProfilesVisible = getIntent().getIntExtra("kid profiles visible", 0);
+        intent.putExtra("kid profiles visible", kidProfilesVisible);
         startActivity(intent);
     }
 
-    public void gotoMainActivity4(View view) {
-        Intent intent = new Intent(this, MainActivity4.class);
+    public void gotoMainActivity2(View view) {
+        Intent intent = new Intent(this, MainActivity2.class);
+        Integer kidProfilesVisible = getIntent().getIntExtra("kid profiles visible", 0);
+        intent.putExtra("kid profiles visible", kidProfilesVisible);
+        ArrayList<String> profiles = getIntent().getStringArrayListExtra("profiles");
+        intent.putStringArrayListExtra("profiles",profiles);
         startActivity(intent);
     }
 }

@@ -167,6 +167,8 @@ public class MainActivity2 extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity3.class);
         ArrayList<String> profiles = getIntent().getStringArrayListExtra("profiles");
         intent.putStringArrayListExtra("profiles",profiles);
+        Integer kidProfilesVisible = getIntent().getIntExtra("kid profiles visible", 0);
+        intent.putExtra("kid profiles visible", kidProfilesVisible);
         startActivity(intent);
     }
 }

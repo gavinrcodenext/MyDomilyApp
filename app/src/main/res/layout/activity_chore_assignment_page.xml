@@ -26,32 +26,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/message_textedit" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/add_user_chore_assignment_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:clickable="true"
-        android:src="@android:drawable/ic_input_add"
-        app:backgroundTint="#74BA77"
-        app:fabCustomSize="20dp"
-        app:fabSize="auto"
-        app:layout_constraintStart_toEndOf="@+id/spinner"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/add_chore_assignment_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:clickable="true"
-        android:src="@android:drawable/ic_input_add"
-        app:backgroundTint="#74BA77"
-        app:fabCustomSize="20dp"
-        app:fabSize="auto"
-        app:layout_constraintStart_toEndOf="@+id/chore_textedit"
-        app:layout_constraintTop_toBottomOf="@+id/add_user_chore_assignment_button" />
-
     <EditText
         android:id="@+id/chore_textedit"
         android:layout_width="wrap_content"

@@ -63,6 +63,8 @@ public class ProfilePageActivity extends AppCompatActivity {
                         b.setVisibility(android.view.View.INVISIBLE);
                         dialog.dismiss();
                     }
+                    dialog.dismiss();
+
                 }
                 else if (kidProfilesVisible == 1) {
                     View b = findViewById(R.id.profile_button_three);

@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
 
-    <CheckBox
-        android:id="@+id/checkBox_meat2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
-        android:text="Dishes- 1:30pm"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/todo_list_title_textview"
         android:layout_width="wrap_content"
@@ -32,19 +21,18 @@
         app:layout_constraintVertical_bias="0.048" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/chore_assigned_checkbox_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="@string/checkBox2"
+        android:layout_marginTop="24dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox_meat2" />
+        app:layout_constraintTop_toBottomOf="@+id/chore_assigned_checkbox_one" />
 
     <CheckBox
-        android:id="@+id/chore_assigned_checkbox"
+        android:id="@+id/chore_assigned_checkbox_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -55,16 +43,15 @@
         app:layout_constraintTop_toBottomOf="@+id/todo_list_title_textview" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/chore_assigned_checkbox_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="@string/Checkbox3"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/chore_assigned_checkbox_two" />
 
     <Button
         android:id="@+id/button2"
@@ -81,12 +68,12 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="70dp"
-        android:layout_height="54dp"
+        android:layout_width="62dp"
+        android:layout_height="51dp"
         android:layout_marginBottom="72dp"
-        android:onClick="gotoMainActivity4"
+        android:onClick="gotoMainActivity2"
         app:backgroundTint="#238A27"
-        app:icon="@android:drawable/ic_menu_month"
+        app:icon="@android:drawable/ic_menu_revert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.153"
