@@ -98,30 +98,6 @@ public class ProfilePageActivity extends AppCompatActivity {
                     button.setText(profile_name);
                     dialog.dismiss();
                 }
-                else if (kidProfilesVisible == 5) {
-                    View b = findViewById(R.id.kid_profile_six);
-                    b.setVisibility(android.view.View.VISIBLE);
-                    kidProfilesVisible += 1;
-                    Button button = findViewById(R.id.kid_profile_six);
-                    button.setText(profile_name);
-                    dialog.dismiss();
-                }
-                else if (kidProfilesVisible == 6) {
-                    View b = findViewById(R.id.kid_profile_seven);
-                    b.setVisibility(android.view.View.VISIBLE);
-                    kidProfilesVisible += 1;
-                    Button button = findViewById(R.id.kid_profile_seven);
-                    button.setText(profile_name);
-                    dialog.dismiss();
-                }
-                else if (kidProfilesVisible == 7) {
-                    View b = findViewById(R.id.kid_profile_eight);
-                    b.setVisibility(android.view.View.VISIBLE);
-                    kidProfilesVisible += 1;
-                    Button button = findViewById(R.id.kid_profile_eight);
-                    button.setText(profile_name);
-                    dialog.dismiss();
-                }
                 else {
                     dialog.dismiss();
                 }

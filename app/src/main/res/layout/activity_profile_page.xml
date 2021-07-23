@@ -10,9 +10,9 @@
         android:id="@+id/parent_profile_button"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="44dp"
         android:onClick="gotoMainActivity2"
         android:text="@string/parent_profile_label"
         android:visibility="visible"
@@ -24,57 +24,25 @@
         android:id="@+id/profile_button_five"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="52dp"
         android:visibility="invisible"
         app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.821"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_button_two" />
-
-    <Button
-        android:id="@+id/kid_profile_seven"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="48dp"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_button_five" />
-
-    <Button
-        android:id="@+id/kid_profile_eight"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_button_six" />
 
     <Button
         android:id="@+id/profile_button_six"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
         android:visibility="invisible"
         app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_button_three" />
-
-    <Button
-        android:id="@+id/kid_profile_six"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="48dp"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_button_four" />
 
     <Button
         android:id="@+id/add_profile_button"
@@ -85,6 +53,7 @@
         android:text="@string/add_profile_button_label"
         app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -92,10 +61,11 @@
         android:id="@+id/profile_button_two"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="196dp"
         android:visibility="invisible"
         app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_profile_button" />
 
@@ -103,9 +73,9 @@
         android:id="@+id/profile_button_four"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="208dp"
         android:visibility="invisible"
         app:backgroundTint="#74BA77"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,9 +85,9 @@
         android:id="@+id/profile_button_three"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
         android:visibility="invisible"
         app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,10 +100,10 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177"
+        app:layout_constraintVertical_bias="0.417"
         app:srcCompat="@drawable/survivalguide" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
