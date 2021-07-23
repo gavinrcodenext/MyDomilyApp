@@ -1,15 +1,20 @@
 package com.example.mydomily;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class ProfilePageActivity extends AppCompatActivity {
     private int kidProfilesVisible = 0;
@@ -17,7 +22,8 @@ public class ProfilePageActivity extends AppCompatActivity {
     private AlertDialog dialog;
     private EditText newprofilepopup_firstname, newprofilepopup_lastname;
     private Button newprofilepopup_cancel, newprofilepopup_save;
-    private ArrayList<String> profiles = new ArrayList<String>();
+    private ImageView survivalGuide;
+    private final ArrayList<String> profiles = new ArrayList<String>();
     private String profile_name;
 
     @Override
@@ -40,91 +46,83 @@ public class ProfilePageActivity extends AppCompatActivity {
         dialog.show();
 
         newprofilepopup_save.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             public void onClick(View v) {
+                String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
+                profiles.add(profile_name);
                 if (kidProfilesVisible == 0) {
                     View b = findViewById(R.id.profile_button_two);
-                    b.setVisibility(View.VISIBLE);
+                    b.setVisibility(android.view.View.VISIBLE);
                     kidProfilesVisible += 1;
-                    String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.profile_button_two);
                     button.setText(profile_name);
-                    profiles.add(profile_name);
-                    dialog.dismiss();
+                    String easterEgg = "best item to survive";
+                    if (Objects.equals(profile_name, easterEgg)) {
+                        ImageView i = findViewById(R.id.survival_guide);
+                        i.setVisibility(android.view.View.VISIBLE);
+                        b.setVisibility(android.view.View.INVISIBLE);
+                        dialog.dismiss();
+                    }
                 }
                 else if (kidProfilesVisible == 1) {
                     View b = findViewById(R.id.profile_button_three);
-                    b.setVisibility(View.VISIBLE);
+                    b.setVisibility(android.view.View.VISIBLE);
                     kidProfilesVisible += 1;
-                    String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.profile_button_three);
                     button.setText(profile_name);
-                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else if (kidProfilesVisible == 2) {
                     View b = findViewById(R.id.profile_button_four);
-                    b.setVisibility(View.VISIBLE);
+                    b.setVisibility(android.view.View.VISIBLE);
                     kidProfilesVisible += 1;
-                    String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.profile_button_four);
                     button.setText(profile_name);
-                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else if (kidProfilesVisible == 3) {
                     View b = findViewById(R.id.profile_button_five);
-                    b.setVisibility(View.VISIBLE);
+                    b.setVisibility(android.view.View.VISIBLE);
                     kidProfilesVisible += 1;
-                    String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.profile_button_five);
                     button.setText(profile_name);
-                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else if (kidProfilesVisible == 4) {
                     View b = findViewById(R.id.profile_button_six);
-                    b.setVisibility(View.VISIBLE);
+                    b.setVisibility(android.view.View.VISIBLE);
                     kidProfilesVisible += 1;
-                    String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.profile_button_six);
                     button.setText(profile_name);
-                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else if (kidProfilesVisible == 5) {
                     View b = findViewById(R.id.kid_profile_six);
-                    b.setVisibility(View.VISIBLE);
+                    b.setVisibility(android.view.View.VISIBLE);
                     kidProfilesVisible += 1;
-                    String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.kid_profile_six);
                     button.setText(profile_name);
-                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else if (kidProfilesVisible == 6) {
                     View b = findViewById(R.id.kid_profile_seven);
-                    b.setVisibility(View.VISIBLE);
+                    b.setVisibility(android.view.View.VISIBLE);
                     kidProfilesVisible += 1;
-                    String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.kid_profile_seven);
                     button.setText(profile_name);
-                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else if (kidProfilesVisible == 7) {
                     View b = findViewById(R.id.kid_profile_eight);
-                    b.setVisibility(View.VISIBLE);
+                    b.setVisibility(android.view.View.VISIBLE);
                     kidProfilesVisible += 1;
-                    String profile_name = newprofilepopup_firstname.getText().toString() + " " + newprofilepopup_lastname.getText().toString();
                     Button button = findViewById(R.id.kid_profile_eight);
                     button.setText(profile_name);
-                    profiles.add(profile_name);
                     dialog.dismiss();
                 }
                 else {
                     dialog.dismiss();
                 }
-
             }
         });
 

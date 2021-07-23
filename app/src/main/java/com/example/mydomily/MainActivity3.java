@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -21,6 +22,9 @@ public class MainActivity3 extends AppCompatActivity {
         String timeAssigned = getIntent().getStringExtra("time");
         String messageAssigned = getIntent().getStringExtra("message");
         View b = findViewById(R.id.chore_assigned_checkbox);
+        /*ArrayList<String> profiles = getIntent().getStringArrayListExtra("profiles");
+        TextView a = findViewById(R.id.todo_list_title_textview);
+        a.setText(profiles.get(0) + "'s To-do List");*/
         if (choreAssigned != null) {
             b.setVisibility(View.VISIBLE);
         }
@@ -31,7 +35,7 @@ public class MainActivity3 extends AppCompatActivity {
         else {
             c.setText(choreAssigned + "- " + timeAssigned);
         }
-        }
+    }
 
     public void gotoChoreAssignmentActivity(View view) {
         Intent intent = new Intent(this, ChoreAssignmentActivity.class);
