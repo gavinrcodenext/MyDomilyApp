@@ -131,8 +131,10 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="50dp"
+        android:foreground="@drawable/ic_personthing"
         android:text=" "
         android:visibility="invisible"
+        app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,7 +147,9 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:foreground="@drawable/ic_personthing"
         android:visibility="invisible"
+        app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -157,6 +161,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="50dp"
         android:visibility="invisible"
+        app:backgroundTint="#74BA77"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_button_one" />
 
@@ -166,6 +171,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="50dp"
         android:visibility="invisible"
+        app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -179,6 +185,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:visibility="invisible"
+        app:backgroundTint="#74BA77"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_button_three" />
 

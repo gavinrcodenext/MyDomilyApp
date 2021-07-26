@@ -50,6 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button"
         android:text="Save"
         app:backgroundTint="#74BA77"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,20 +58,21 @@
         app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newprofilepopup_lastname"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintVertical_bias="0.453" />
 
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button"
         android:text="Cancel"
         app:backgroundTint="#74BA77"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.749"
+        app:layout_constraintHorizontal_bias="0.748"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newprofilepopup_lastname"
-        app:layout_constraintVertical_bias="0.481" />
+        app:layout_constraintVertical_bias="0.453" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

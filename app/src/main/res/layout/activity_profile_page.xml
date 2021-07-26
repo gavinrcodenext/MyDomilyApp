@@ -63,6 +63,7 @@
         android:onClick="createNewProfileDialog"
         android:text="@string/add_profile_button_label"
         app:backgroundTint="#74BA77"
+        app:icon="@android:drawable/ic_input_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
