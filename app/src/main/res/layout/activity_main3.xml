@@ -81,4 +81,27 @@
         app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="348dp"
+        android:layout_height="506dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151"
+        app:srcCompat="@drawable/screen_shot_2021_07_26_at_3_28_10_pm" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
+        android:gravity="center_horizontal"
+        android:text='This child has no chores. Click the "+" to assign a chore.'
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
