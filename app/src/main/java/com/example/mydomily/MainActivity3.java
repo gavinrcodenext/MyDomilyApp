@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -30,14 +32,20 @@ public class MainActivity3 extends AppCompatActivity {
         View c = findViewById(R.id.chore_assigned_checkbox_three);
         if (!a.isShown()) {
             if (choreAssigned != null) {
-            a.setVisibility(VISIBLE);
-            }
-        CheckBox d = findViewById(R.id.chore_assigned_checkbox_one);
-            if (messageAssigned != null) {
-            d.setText(choreAssigned + "- " + timeAssigned + "\n" + messageAssigned);
+                a.setVisibility(VISIBLE);
             }
             else {
-            d.setText(choreAssigned + "- " + timeAssigned);
+                ImageView no_chores_image = findViewById(R.id.no_chores_image);
+                no_chores_image.setVisibility(VISIBLE);
+                TextView no_chores_textview = findViewById(R.id.no_chores_textview);
+                no_chores_textview.setVisibility(VISIBLE);
+            }
+            CheckBox d = findViewById(R.id.chore_assigned_checkbox_one);
+            if (messageAssigned != null) {
+                d.setText(choreAssigned + "- " + timeAssigned + "\n" + messageAssigned);
+            }
+            else {
+                d.setText(choreAssigned + "- " + timeAssigned);
             }
         }
         else if (a.isShown() & !b.isShown()) {
