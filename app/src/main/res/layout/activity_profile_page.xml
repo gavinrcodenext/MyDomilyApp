@@ -15,6 +15,7 @@
         android:text="@string/parent_profile_label"
         android:visibility="visible"
         app:backgroundTint="#74BA77"
+        app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_profile_button" />
@@ -28,6 +29,7 @@
         android:layout_marginRight="40dp"
         android:visibility="invisible"
         app:backgroundTint="#74BA77"
+        app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_button_three" />
 
@@ -40,6 +42,7 @@
         android:layout_marginTop="30dp"
         android:visibility="invisible"
         app:backgroundTint="#74BA77"
+        app:cornerRadius="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_button_four" />
 
@@ -52,6 +55,7 @@
         android:layout_marginRight="40dp"
         android:visibility="invisible"
         app:backgroundTint="#74BA77"
+        app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_button_five" />
 
@@ -63,6 +67,7 @@
         android:onClick="createNewProfileDialog"
         android:text="@string/add_profile_button_label"
         app:backgroundTint="#74BA77"
+        app:cornerRadius="12dp"
         app:icon="@android:drawable/ic_input_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -78,6 +83,7 @@
         android:layout_marginTop="30dp"
         android:visibility="invisible"
         app:backgroundTint="#74BA77"
+        app:cornerRadius="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/parent_profile_button" />
 
@@ -90,6 +96,7 @@
         android:layout_marginTop="30dp"
         android:visibility="invisible"
         app:backgroundTint="#74BA77"
+        app:cornerRadius="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_button_two" />
 
@@ -102,6 +109,7 @@
         android:layout_marginRight="40dp"
         android:visibility="invisible"
         app:backgroundTint="#74BA77"
+        app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/parent_profile_button" />
 
