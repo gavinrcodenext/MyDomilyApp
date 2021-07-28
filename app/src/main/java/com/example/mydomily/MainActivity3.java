@@ -2,6 +2,7 @@ package com.example.mydomily;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +18,7 @@ import static android.view.View.VISIBLE;
 
 public class MainActivity3 extends AppCompatActivity {
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,9 +26,9 @@ public class MainActivity3 extends AppCompatActivity {
         String choreAssigned = getIntent().getStringExtra("chore");
         String timeAssigned = getIntent().getStringExtra("time");
         String messageAssigned = getIntent().getStringExtra("message");
-        /*ArrayList<String> profiles = getIntent().getStringArrayListExtra("profiles");
-        TextView a = findViewById(R.id.todo_list_title_textview);
-        a.setText(profiles.get(0) + "'s To-do List");*/
+        ArrayList<String> profiles = getIntent().getStringArrayListExtra("profiles");
+        TextView q = findViewById(R.id.todo_list_title_textview);
+        q.setText(profiles.get(0) + "'s To-do List");
         View a = findViewById(R.id.chore_assigned_checkbox_one);
         View b = findViewById(R.id.chore_assigned_checkbox_two);
         View c = findViewById(R.id.chore_assigned_checkbox_three);
