@@ -36,25 +36,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:hint="Last Name"
+        android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newprofilepopup_firstname"
-        android:hint="Last Name"
-        android:textAlignment="center"
-        android:gravity="center_horizontal" />
+        app:layout_constraintTop_toBottomOf="@+id/newprofilepopup_firstname" />
 
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/custom_button"
         android:text="Cancel"
         app:backgroundTint="#74BA77"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newprofilepopup_lastname" />
 
@@ -64,10 +66,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/custom_button"
         android:text="Save"
         app:backgroundTint="#74BA77"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newprofilepopup_lastname" />
 
