@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/chore_assignment_user_input"
         android:textSize="18sp"
         android:textStyle="bold"
