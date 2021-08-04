@@ -28,7 +28,7 @@ public class MainActivity3 extends AppCompatActivity {
         String messageAssigned = getIntent().getStringExtra("message");
         ArrayList<String> profiles = getIntent().getStringArrayListExtra("profiles");
         TextView q = findViewById(R.id.todo_list_title_textview);
-        q.setText(profiles.get(0) + "'s To-do List");
+        q.setText(profiles.get(0) + "'s To-Do List");
         View a = findViewById(R.id.chore_assigned_checkbox_one);
         View b = findViewById(R.id.chore_assigned_checkbox_two);
         View c = findViewById(R.id.chore_assigned_checkbox_three);
